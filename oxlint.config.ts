@@ -53,6 +53,7 @@ export default defineConfig({
 		"react/react-in-jsx-scope": "off",
 		"react-perf/jsx-no-new-array-as-prop": "off",
 		"react-perf/jsx-no-new-object-as-prop": "off",
+		"react-perf/jsx-no-new-function-as-prop": "off",
 
 		// Import correctness and dependency structure
 		"import/no-cycle": "error",
