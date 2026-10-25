@@ -49,6 +49,9 @@ export default defineConfig({
 		"typescript/no-explicit-any": "warn",
 		"typescript/no-non-null-assertion": "warn",
 
+		"react-perf/jsx-no-jsx-as-prop": "off",
+		"react/react-in-jsx-scope": "off",
+
 		// Import correctness and dependency structure
 		"import/no-cycle": "error",
 		"import/no-duplicates": ["error", { preferInline: true }],

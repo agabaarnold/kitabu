@@ -4,7 +4,7 @@ export default defineConfig({
 	printWidth: 80,
 	useTabs: true,
 	sortImports: {
-		internalPattern: ["@/", "~/", "#"],
+		internalPattern: ["@/", "~/", "#/"],
 		groups: [
 			"type-import",
 			["value-builtin", "value-external"],
@@ -15,7 +15,7 @@ export default defineConfig({
 			"unknown",
 		],
 	},
-	sortTailwindcss: { functions: ["cn"], stylesheet: "src/styles.css" },
+	sortTailwindcss: { functions: ["cn"], stylesheet: "./src/styles.css" },
 	sortPackageJson: { sortScripts: false },
-	ignorePatterns: ["src/routeTree.gen.ts"],
+	ignorePatterns: ["./src/routeTree.gen.ts"],
 });
