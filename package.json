@@ -15,8 +15,8 @@
 		"db:push": "bun --bun drizzle-kit push",
 		"db:pull": "bun --bun drizzle-kit pull",
 		"db:studio": "bun --bun drizzle-kit studio",
-		"fmt": "oxfmt",
-		"fmt:check": "oxfmt --check",
+		"format": "bun fmt",
+		"format:check": "bun fmt --check",
 		"lint": "oxlint",
 		"lint:fix": "oxlint --fix"
 	},
