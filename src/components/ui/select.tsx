@@ -1,5 +1,3 @@
-"use client";
-
 import { Select as SelectPrimitive } from "@base-ui/react/select";
 import {
 	IconSelector,
@@ -8,7 +6,6 @@ import {
 	IconChevronDown,
 } from "@tabler/icons-react";
 import { cn } from "cn";
-import * as React from "react";
 
 const Select = SelectPrimitive.Root;
 

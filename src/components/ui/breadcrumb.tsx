@@ -2,7 +2,6 @@ import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
 import { IconChevronRight, IconDots } from "@tabler/icons-react";
 import { cn } from "cn";
-import * as React from "react";
 
 function Breadcrumb({ className, ...props }: React.ComponentProps<"nav">) {
 	return (
@@ -62,6 +61,7 @@ function BreadcrumbPage({ className, ...props }: React.ComponentProps<"span">) {
 	return (
 		<span
 			data-slot="breadcrumb-page"
+			// oxlint-disable-next-line jsx-a11y/prefer-tag-over-role
 			role="link"
 			aria-disabled="true"
 			aria-current="page"

@@ -4,7 +4,6 @@ import {
 	IconDots,
 } from "@tabler/icons-react";
 import { cn } from "cn";
-import * as React from "react";
 
 import { Button } from "#/components/ui/button.tsx";
 
