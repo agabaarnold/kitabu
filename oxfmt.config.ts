@@ -4,6 +4,7 @@ export default defineConfig({
 	printWidth: 80,
 	useTabs: true,
 	sortImports: {
+		internalPattern: ["@/", "~/", "#"],
 		groups: [
 			"type-import",
 			["value-builtin", "value-external"],
