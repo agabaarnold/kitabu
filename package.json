@@ -69,6 +69,7 @@
 		"drizzle-kit": "^1.0.0-rc.5",
 		"oxfmt": "^0.74.0",
 		"oxlint": "^1.89.0",
+		"oxlint-tsgolint": "^7.0.2005",
 		"tsx": "^4.21.0",
 		"typescript": "^7.0.2",
 		"vite": "^8.0.0"
