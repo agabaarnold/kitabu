@@ -21,7 +21,7 @@ export const PasswordInput = ({ ...props }: PasswordInputProps) => {
 				<InputGroupButton
 					onClick={() => setShowPassword((prev) => !prev)}
 					size="icon-xs"
-                    type="button"
+					type="button"
 				>
 					{showPassword ? <IconEyeOff /> : <IconEye />}
 				</InputGroupButton>

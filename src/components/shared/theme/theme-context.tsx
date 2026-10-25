@@ -198,16 +198,19 @@ export function ThemeProvider({
 		root.style.colorScheme = resolvedTheme;
 	}, [isReady, resolvedTheme]);
 
-	const setTheme = useCallback((nextTheme: Theme) => {
-		// The UI should remain responsive even when persistence fails.
-		try {
-			window.localStorage.setItem(storageKey, nextTheme);
-		} catch {
-			// The preference will apply for this mounted session.
-		}
+	const setTheme = useCallback(
+		(nextTheme: Theme) => {
+			// The UI should remain responsive even when persistence fails.
+			try {
+				window.localStorage.setItem(storageKey, nextTheme);
+			} catch {
+				// The preference will apply for this mounted session.
+			}
 
-		window.dispatchEvent(new Event(THEME_CHANGE_EVENT));
-	}, [storageKey]);
+			window.dispatchEvent(new Event(THEME_CHANGE_EVENT));
+		},
+		[storageKey],
+	);
 
 	const contextValue = useMemo<ThemeContextValue>(
 		() => ({

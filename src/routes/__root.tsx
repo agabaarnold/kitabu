@@ -49,7 +49,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 			<head>
 				<HeadContent />
 			</head>
-			
+
 			<body>
 				<ThemeProvider defaultTheme="system">
 					<TooltipProvider>{children}</TooltipProvider>
