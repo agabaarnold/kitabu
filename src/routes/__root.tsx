@@ -8,11 +8,11 @@ import {
 	createRootRouteWithContext,
 } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
+import { Toaster } from "react-hot-toast";
 
 import { TooltipProvider } from "#/components/ui/tooltip.tsx";
 
 import appCss from "../styles.css?url";
-import { Toaster } from "react-hot-toast";
 
 interface MyRouterContext {
 	queryClient: QueryClient;

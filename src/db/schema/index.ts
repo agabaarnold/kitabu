@@ -14,4 +14,4 @@ export const schema = {
 	sessions,
 	users,
 	verifications,
-} as const
+} as const;
