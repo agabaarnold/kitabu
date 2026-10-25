@@ -2,7 +2,7 @@ import { defineConfig } from "oxlint";
 
 export default defineConfig({
 	categories: {
-		correctness: "warn",
+		correctness: "error",
 		nursery: "warn",
 		pedantic: "warn",
 		perf: "warn",
@@ -26,5 +26,6 @@ export default defineConfig({
 		"eslint/no-unused-vars": "error",
 		"eslint/prefer-const": ["error", { destructuring: "any" }],
 	},
+	env: { builtin: true },
 	ignorePatterns: ["src/routeTree.gen.ts"],
 });
