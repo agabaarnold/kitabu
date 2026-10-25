@@ -10,6 +10,7 @@ import {
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { Toaster } from "react-hot-toast";
 
+import { ThemeProvider } from "#/components/shared/theme/theme-context.tsx";
 import { TooltipProvider } from "#/components/ui/tooltip.tsx";
 
 import appCss from "../styles.css?url";
@@ -44,13 +45,16 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<head>
 				<HeadContent />
 			</head>
+			
 			<body>
-				<TooltipProvider>{children}</TooltipProvider>
-				<Toaster />
+				<ThemeProvider defaultTheme="system">
+					<TooltipProvider>{children}</TooltipProvider>
+					<Toaster />
+				</ThemeProvider>
 
 				<TanStackDevtools
 					config={{
