@@ -17,5 +17,5 @@ export default defineConfig({
 	},
 	sortTailwindcss: { functions: ["cn"], stylesheet: "./src/styles.css" },
 	sortPackageJson: { sortScripts: false },
-	ignorePatterns: ["./src/routeTree.gen.ts"],
+	ignorePatterns: ["src/routeTree.gen.ts"],
 });
